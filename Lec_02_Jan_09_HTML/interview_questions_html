@@ -1,0 +1,61 @@
+What is HTML?
+HTML (HyperText Markup Language) is used to structure content on the web.
+
+What are HTML tags?
+Tags are keywords enclosed in angle brackets < > used to define elements.
+
+What is the difference between HTML and HTML5?
+HTML5 supports multimedia (<audio>, <video>), semantic tags, local storage, and better APIs.
+
+What are semantic HTML elements?
+Elements that clearly describe their meaning, e.g. <header>, <footer>, <article>.
+
+What is the use of <!DOCTYPE html>?
+It tells the browser to render the page in HTML5 standard mode.
+
+What is the difference between <div> and <span>?
+<div> is block-level, <span> is inline.
+
+What are empty (void) elements?
+Elements with no closing tag like <br>, <hr>, <img>.
+
+What is the difference between block and inline elements?
+Block elements take full width; inline elements take only required width.
+
+What is the purpose of the <meta> tag?
+Provides metadata like charset, description, viewport.
+
+What is the use of alt attribute in <img>?
+Improves accessibility and SEO when image fails to load.
+
+What is the difference between id and class?
+id is unique; class can be reused.
+
+What are HTML entities?
+Used to display reserved characters like &lt; for <.
+
+What is the <iframe> tag?
+Embeds another webpage inside the current page.
+
+What is the use of the <label> tag?
+Improves accessibility for form inputs.
+
+Forms & Media
+
+What are new form input types in HTML5?
+email, date, number, range, tel, url.
+
+Difference between <strong> and <b>?
+<strong> has semantic importance; <b> is only visual.
+
+What is the difference between <em> and <i>?
+<em> emphasizes meaning; <i> is stylistic.
+
+What is the <canvas> element?
+Used for drawing graphics via JavaScript.
+
+What is localStorage and sessionStorage?
+Stores data in browser; localStorage persists, sessionStorage ends with session.
+
+How do you make a website responsive using HTML?
+Using <meta viewport>, semantic structure, and responsive images.

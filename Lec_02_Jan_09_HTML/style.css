@@ -1,0 +1,10 @@
+/* html{
+    background-color: red;
+}
+h2{
+    color: blue;
+} */
+
+#parent .blue{
+    color: blue;
+}
