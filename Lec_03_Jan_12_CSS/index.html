@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            padding: 0;
+            margin: 0;
+            box-sizing: box;
+            overflow: hidden;
+        }
+
+        nav {
+            display: flex;
+            border: 1px solid blue;
+            width: 100%;
+            justify-content: space-between;
+            padding: .3rem 1rem;
+        }
+
+        nav .right {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+        }
+
+        nav .left {
+            display: flex;
+            align-items: center;
+        }
+
+        nav .left .logo {
+            font-size: x-large;
+            font-weight: bolder;
+        }
+
+        nav .right .content ul {
+            display: flex;
+            list-style: none;
+            gap: .5rem;
+        }
+
+        .common_btn {
+            padding: 6px 20px;
+            color: white;
+            border-radius: 20px;
+        }
+
+        .login_btn {
+            background: blue;
+        }
+
+        .signup_btn {
+            border: 1px solid blue;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="left">
+            <div class="logo">
+                LOGO
+            </div>
+        </div>
+        <div class="right">
+            <div class="content">
+                <ul>
+                    <li>Home</li>
+                    <li>Blog</li>
+                    <li>Task</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="login_btn common_btn">Login</div>
+            <div class="signup_btn common_btn">Signup</div>
+        </div>
+    </nav>
+</body>
+
+</html>
