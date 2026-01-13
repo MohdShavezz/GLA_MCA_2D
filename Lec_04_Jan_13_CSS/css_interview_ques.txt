@@ -1,0 +1,110 @@
+1. What is CSS?
+CSS (Cascading Style Sheets) is used to style and layout web pages—for example, to change colors, fonts, spacing, and positioning of HTML elements.
+
+2. What are the different types of CSS?
+Inline CSS – inside HTML tags
+Internal CSS – inside <style> tag
+External CSS – separate .css file (recommended)
+
+3. What is the CSS box model?
+Content
+Padding
+Border
+Margin
+Used to control spacing and layout.
+
+4. Difference between class and id?
+Class	ID
+Reusable	Unique
+Uses .	Uses #
+Multiple elements	One element
+
+5. What are CSS positions?
+static (default)
+relative
+absolute
+fixed
+sticky
+
+6. Difference between display: none and visibility: hidden?
+display:none	visibility:hidden
+Removes element	Keeps space
+Not visible	Invisible
+
+7. Difference between inline and inline-block?
+Inline	Inline-block
+No width/height	Supports width/height
+No margin top/bottom	Margins allowed
+
+8. What is Flexbox?
+Flexbox is a one-dimensional layout system (row or column) for aligning items easily.
+Key properties:
+display: flex
+justify-content
+align-items
+flex-direction
+
+9. Difference between Flexbox and Grid?
+Flexbox	Grid
+One-dimensional	Two-dimensional
+Row OR column	Rows AND columns
+
+10. What are pseudo-classes?
+Used to define a special state.
+Examples:
+:hover
+:focus
+:active
+:nth-child()
+
+11. What are pseudo-elements?
+Style specific parts of elements.
+Examples:
+::before
+::after
+::first-letter
+
+12. What is z-index?
+Controls vertical stacking order.
+Works only on positioned elements.
+
+13. What are media queries?
+Used for responsive design.
+Example:
+@media (max-width: 768px) {
+  body {
+    background: red;
+  }
+}
+
+14. What is responsive design?
+
+15. What is overflow?
+hidden
+scroll
+auto
+visible
+
+16. What is opacity vs visibility?
+Opacity	Visibility
+Affects transparency	Hide/show
+Clickable	Not clickable
+
+17. What is object-fit?
+18. How to center a div?
+
+19. What is calc()?
+Used for dynamic values:
+width: calc(100% - 50px);
+
+20. css variables custom properties?
+Declaration: --variable-name: value;
+Usage: property: var(--variable-name); 
+
+21. Selectors
+Selector	Meaning	Direction
+	Any descendant	↓
+>	Direct child	↓
++	Next sibling only	→
+~	All following siblings
+
