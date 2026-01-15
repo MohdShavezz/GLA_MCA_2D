@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            --purple: #6546a5
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        nav .left img {
+            height: 2rem;
+            width: 6rem;
+            padding-left: 1rem;
+        }
+
+        nav .right {
+            display: flex;
+            gap: .6rem;
+        }
+
+        nav .right a {
+            font-size: 14px;
+            text-decoration: none;
+            color: gray;
+        }
+
+        nav .right {
+            display: flex;
+            gap: .6rem;
+            align-items: center;
+        }
+
+        .common-btn {
+            padding: 4px 20px;
+            border: 1px solid;
+            border-radius: 10px;
+        }
+
+        .common-btn:hover {
+            background-color: #6546a5b3 !important;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            padding: 3rem;
+        }
+
+        section .left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 3rem;
+            gap: 1rem;
+        }
+
+        section .right {
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            nav .right a {
+                display: none;
+            }
+
+            section {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
+
+        .bubble1 {
+            width: 10rem;
+            height: 10rem;
+            background-color: rgb(237, 237, 16);
+            position: fixed;
+            border-radius: 100px;
+            left: -8%;
+            top: 51%;
+        }
+
+        .bubble2 {
+            width: 3rem;
+            height: 3rem;
+            background-color: rgb(218 169 241);
+            position: fixed;
+            border-radius: 100px;
+            left: 2%;
+            top: 49%;
+        }
+
+        /* body {
+    margin: 0;
+    min-height: 100vh;
+
+    background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+} */
+        /* blurred background */
+    
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="left">
+                <img src="logo.webp" alt="">
+            </div>
+            <div class="right">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+                <a href="">Blog</a>
+                <button class="common-btn">Login</button>
+                <button class="common-btn" style="background-color: var(--purple);color: white;">Signup</button>
+            </div>
+        </nav>
+        <section>
+            <div class="bubble1"></div>
+            <div class="bubble2"></div>
+            <div class="left">
+                <h1>Revolutionize Your Academic Writing Workflow With ACADLANCE</h1>
+                <p>
+                    Our platform is a perfect blend for both experts and clients! Experts can showcase their skills and
+                    secure fair pay, while clients can access top-tier experts and streamline projects effortlessly.
+                </p>
+                <button class="common-btn" style="width: 10rem;padding: .7rem;">GET STARTED</button>
+            </div>
+            <div class="right">
+                <img src="womanlaptop.webp" alt="womanlaptop" height="300">
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
