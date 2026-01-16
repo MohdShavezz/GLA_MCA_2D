@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bubbling vs Capturing</title>
+  <style>
+    div {
+      padding: 30px;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="1">
+    Div 1
+    <div id="2">
+      Div 2
+      <div id="3">
+        Div 3 (Click me)
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("1").addEventListener("click", () => {
+      console.log(1);
+    }, true);
+
+    document.getElementById("2").addEventListener("click", () => {
+      console.log(2);
+    }, true);
+
+    document.getElementById("3").addEventListener("click", () => {
+      console.log(3);
+    }, true);
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>HTML manipulation</h2>
+
+    <button id="red">RED</button>
+    <button class="green">GREEN</button>
+    <button>BLUE</button>
+
+    <section style="background-color: yellow;">
+
+        <p>one</p>
+        <p>two</p>
+        <p>three</p>
+        <!-- <p>mysaldjf</p> -->
+
+    </section>
+
+    <input type="text" name="name" id="name_input" placeholder="name">
+
+    <script>
+
+        //load event
+        window.addEventListener('load',()=>{
+            console.log('loading..')
+        })
+
+        // change event
+        document.querySelector('#name_input').addEventListener('change',(e)=>{
+            console.log(e.target.value)
+        })
+
+        let par=document.querySelector('section p')
+        const referenceNode = par.children[1];
+         const child = document.createElement('p')
+         child.innerText='asdfdsf'
+       
+        par.insertBefore(child, referenceNode);
+        // selectors 
+
+        const parent = document.querySelector('section')
+        // const child = document.createElement('p')
+        // child.innerHTML = '<h3>my head</h3>'
+        // child.innerText='<h3>my head</h3>'
+        // parent.appendChild(child)  // insert at last
+        parent.insertAdjacentElement('afterbegin', child)
+
+
+       
+
+        //console all the p's content 
+        const section = document.querySelectorAll('section p')
+        section.forEach(element => {
+            // console.log(element.innerHTML)
+            console.log(element.innerText)
+        });
+        
+
+        const green = document.querySelector('.green')
+        green.addEventListener('click', () => {
+            green.innerHTML = 'updated green'
+        })
+        // id selector 
+        const red = document.getElementById('red')
+        red.addEventListener('click', () => {
+            document.body.style.backgroundColor = 'red'
+        })
+
+    </script>
+</body>
+
+</html>
