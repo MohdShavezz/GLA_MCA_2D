@@ -58,7 +58,6 @@ What are Cookies?
 	• Used by server & client
 
 Use cases
-
 	• Authentication
 	• Session tracking
 
