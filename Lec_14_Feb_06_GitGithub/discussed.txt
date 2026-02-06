@@ -1,0 +1,22 @@
+git vs github
+use cases
+explaination ( local and remote environment, staging, unstaging area )
+
+#1 push local code to remote repositary (github)
+git init
+git add . 
+git commit -m 'message'
+git remote add origin URL 
+git push origin master
+
+#discussed commands for git operations
+git status
+git log --oneline
+git rm --cached file.name (unstage to stage)
+git reset HEAD~ 
+git reset commit-id
+git branch
+git checkout
+git remote
+git merge 
+
