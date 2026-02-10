@@ -1,0 +1,9 @@
+mysql installation
+sql vs nosql 
+acid property
+basic database commands
+sql commands
+alter table
+
+
+https://1drv.ms/p/c/7f036de033caac6e/IQBurMoz4G0DIIB_jAAAAAAAAf9saqL452a0hnTHLtRARmI?e=duMV1d
