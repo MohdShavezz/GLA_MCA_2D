@@ -1,0 +1,13 @@
+{
+  "name": "lec_17_feb_16_node",
+  "version": "1.0.0",
+  "main": "path_url.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
