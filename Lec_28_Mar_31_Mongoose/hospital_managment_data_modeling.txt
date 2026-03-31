@@ -1,0 +1,45 @@
+Assignment: Hospital Management System (Mongoose Models)
+
+Objective:-
+Create a basic Hospital Management System using MongoDB + Mongoose.
+You will design schemas for:
+#Patient
+#Doctor
+#Hospital
+
+
+
+1. Patient Schema
+
+Create a patientSchema with the following fields:
+
+name → String (required, min 3, max 50)
+age → Number (required)
+gender → Enum (male, female, other)
+disease → String (required)
+admitted → Boolean (default: false)
+phone → String (with custom validator using regex)
+address → Object
+city → String
+pincode → Number
+
+2. Doctor Schema
+
+Create a doctorSchema:
+
+name → String (required)
+specialization → String (required)
+experience → Number (in years)
+available → Boolean (default: true)
+hospitalId → ObjectId (reference to Hospital)
+patients → Array of ObjectIds (reference to Patient)
+
+3. Hospital Schema
+
+Create a hospitalSchema:
+
+name → String (required)
+location → String
+capacity → Number
+doctors → Array of ObjectIds (reference to Doctor)
+patients → Array of ObjectIds (reference to Patient)
