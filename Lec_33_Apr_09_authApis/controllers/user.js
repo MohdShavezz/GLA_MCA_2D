@@ -1,6 +1,7 @@
 import { User } from "../models/User.js"
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
+import { transporter } from "../utils/emailer.js"
 
 
 export async function register(req, res) {
@@ -66,4 +67,49 @@ export async function getUsers(req, res) {
         console.log('error in getUsers', error)
     }
 }
+export async function forgotPassword(req, res) {
+    try {
+        const { email } = req.body
+        const user=await User.findOne({email})
+        if(!user){
+           return res.status(200).send('register first.')
+        }
+        // token
+        const token = jwt.sign({ id: user._id },process.env.JWT_SECRET_KEY, { expiresIn: '1h' });
 
+        console.log(user)
+        console.log(token)
+        await transporter.sendMail({
+            to:user.email,
+            subject:"Reset Email",
+            html:`
+                <h3>Use this token to reset your password</h3>
+                <p> ${token} </p>
+            `
+        })
+
+        return res.status(200).send('check your email for reset token')
+
+
+    } catch (error) {
+        console.log('error in forgotPassword', error)
+    }
+}
+export async function resetPassword(req, res) {
+    try {
+        const { newpassword,token } = req.body
+        const decoded=jwt.verify(token,process.env.JWT_SECRET_KEY)
+        const user=await User.findById(decoded.id)
+        if(!user){
+           return res.status(200).send('invalid token.')
+        }
+        //reset password
+        const hashPass = await bcrypt.hash(newpassword, 10);
+        user.password=hashPass 
+        await user.save()
+        return res.status(200).send('password reset sucessfully.')
+   
+    } catch (error) {
+        console.log('error in resetPassword', error)
+    }
+}
